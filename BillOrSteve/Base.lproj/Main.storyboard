@@ -16,17 +16,23 @@
                             <view contentMode="scaleToFill" id="k5I-ep-1Jb">
                                 <rect key="frame" x="0.0" y="389" width="320" height="179"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.36507601351351349" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.82906568758515164" green="0.86158857517575449" blue="0.88742896685233486" alpha="0.24698275862068966" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="waZ-S2-rBo">
                                 <rect key="frame" x="52" y="440" width="76" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="steve" image="SteveJobs"/>
+                                <connections>
+                                    <action selector="chooseQuotee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o7e-0H-pHh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pmx-kv-Kjc">
                                 <rect key="frame" x="179" y="440" width="76" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="bill" image="BillGates"/>
+                                <connections>
+                                    <action selector="chooseQuotee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lE7-5f-Lnp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bjg-Hq-bR1">
                                 <rect key="frame" x="47" y="399" width="86" height="33"/>
@@ -42,7 +48,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EDs-I2-kTY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 / 9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EDs-I2-kTY">
                                 <rect key="frame" x="124" y="26" width="72" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
@@ -57,12 +63,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.73637519537155316" green="0.86673383875809507" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="billButton" destination="pmx-kv-Kjc" id="bXT-Fn-eGU"/>
+                        <outlet property="factLabel" destination="mVc-Ct-l0W" id="uCC-VP-BqV"/>
+                        <outlet property="factNumberLabel" destination="EDs-I2-kTY" id="pZY-Qo-owP"/>
+                        <outlet property="steveButton" destination="waZ-S2-rBo" id="2Eu-8d-GON"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="399"/>
+            <point key="canvasLocation" x="274" y="438"/>
         </scene>
     </scenes>
     <resources>
